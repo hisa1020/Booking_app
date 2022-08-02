@@ -1,24 +1,32 @@
-# README
+# 宿予約アプリ
+Ruby On Rails課題②  
+作成期間(2021/12/15~2022/1/13) 
+ユーザー登録、ログイン、ログアウト、アカウント編集、宿の登録、宿の予約などの機能があります。    
+初めて作成した本格的なWebアプリでそれまでの課題と比べて作成に時間がかかりました。  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 使い方
+- 登録済みの宿の検索して、宿の詳細情報を見ることができます。ヘッダーの検索窓からは住所、キーワードのそれぞれの情報から検索ができます。  
 
-Things you may want to cover:
+以下の機能には新規登録、ログインが必要になります。  
+- 宿の登録   
+宿の基本情報(名前、詳細、料金、住所、画像)を記入することで宿を新規で登録することができます。  
+- 宿の予約  
+宿の詳細ページで予約開始日と終了日、人数を入力すれば、予約の確認画面に移行します。確認画面で「予約を確定」を押すと予約が完了します。
+- 登録済みの宿、予約の確認  
+ヘッダー右上のアイコンをクリックして表示されるメニューからユーザーが登録、予約した宿が確認できます。
+- 登録したアカウントの編集  
+ヘッダー右上のアイコンをクリックして表示されるメニューから「設定」を選択するとユーザー情報を編集することができます。
+「アカウント編集」ではメールアドレスとパスワードの変更、「プロフィール」ではアイコン画像、名前、自己紹介文の登録変更ができます。
 
-* Ruby version
+## 使用技術
+- Ruby 3.0.3
+- Ruby On Rails 6.1.4
+- SQlite 1.4
+- puma 5.0
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 機能一覧
+- ユーザー登録機能、 ログイン機能(devise)
+- アイコン登録機能(carrierwave)
+- 宿登録機能
+- 宿予約機能
+- 検索機能(住所、名前)
